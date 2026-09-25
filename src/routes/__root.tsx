@@ -7,7 +7,7 @@ export const Route = createRootRoute({
 
 function RootLayout() {
   return (
-    <div className="min-h-screen bg-white text-slate-900 antialiased">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 text-slate-900 antialiased">
       <Outlet />
     </div>
   );
@@ -15,7 +15,7 @@ function RootLayout() {
 
 function NotFound() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-white text-slate-900">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-gradient-to-b from-blue-50 to-blue-100 text-blue-900">
       <p className="text-lg">This page does not exist.</p>
       <Link to="/" className="text-sm underline underline-offset-4">
         Go to the home page
